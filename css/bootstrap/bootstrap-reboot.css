@@ -10,6 +10,11 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+#about-section {
+    margin-top: 50px; /* 여백 크기를 조절하세요 */
+}
+
+
 
 html {
   font-family: sans-serif;
