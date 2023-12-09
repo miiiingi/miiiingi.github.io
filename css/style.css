@@ -699,12 +699,19 @@ pre {
     margin-bottom: 1em; /* 아코디언 아이템 간의 아래 여백을 없앰 */
 }
 
-.card-header {
-  padding: 0;
-}
-
 .card-header a {
     background-color: #f8f9fa; /* 클릭한 아코디언 아이템의 배경색 지정 */
+    border: 1px solid rgba(0,0,0,.125); /* 아코디언 헤더의 테두리 스타일 설정 */
+    padding: 0;
+}
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.accordion-image {
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 576px) {
