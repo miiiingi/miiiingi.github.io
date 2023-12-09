@@ -4,7 +4,7 @@
 <head>
 	<title>Mingi Kim Fortfolio</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -165,82 +165,69 @@
 						</div>
 
 						</div>
-					<div id="page-4" class="page four">
-						<h2 id="projects-section" class="heading">Projects</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
+				</div>
+				<div id="page-4" class="page four">
+					<h2 id="projects-section" class="heading">Projects</h2>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="flaticon-ideas"></span>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2019.09-2019.12</span>
+							<div class="d-flex">
+								<h2>Network Analysis</h2>
 							</div>
-							<div class="text pl-3">
-								<span class="date">2019.09-2020.08</span>
-								<div class="d-flex">
-									<h2>웰리스 여행 상품 예약 플랫폼 개발</h2>
-								</div>
-								<span class="position">주식회사 더라피스</span>
-								<div class="accordion" id="accordionExample">
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="headingOne">
-									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Accordion Item #1
-									</button>
-									</h2>
-									<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-									</div>
-									</div>
-								</div>
-								</div>
+							<span class="position">경북대학교</span>
+							<div class="container mt-5">
+								<div id="accordion1">
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<h5 class="mb-0">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													대구시 혼잡 구간 예측
+												</button>
+											</h5>
+										</div>
 
-								<div> <b class="text-dark">기술 스택 : </b>React, Typescript, Next.js, Styled-Component,
-									MobX
+										<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+											<div class="card-body">
+												<p>
+												4학년 2학기에 “수리적 빅데이터 개론”수업을 들으며 중간고사 과제로 대구시의 혼잡 구간을 예측하였습니다.
+
+												대구시 도로의 연결 정보를 바탕으로 그래프를 구성하였습니다. 그 후, Degree Centrality, Betweeness Centrality, Clossness Centrality 척도를 계산하였고, 이를 통해 대구시 도로가 Random Graph Network라는 것을 알 수 있었습니다. 그리고 Degree, Betweeness, Closseness Centrality를 통해 대구에서 어떤 지역이 혼잡 구간인지에 대해 분석하였습니다.
+												</p>
+												<a href="images\Network Analysis-Traffic Congestion.pdf" target="_blank">Network Analysis-Traffic Congestion</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div> <b class="text-dark">주요 기능 : </b> 회원 관리 및 SNS 로그인, 상품 리스트 확인, 상품 상세 정보
-									확인, 예약 관리, 결제 </div>
-								<p> React </p>
+								<div id="accordion2">
+									<div class="card">
+										<div class="card-header" id="headingTwo">
+											<h5 class="mb-0">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+													마블 영화 속 주요 인물 추론
+												</button>
+											</h5>
+										</div>
+
+										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+											<div class="card-body">
+												<p>
+												4학년 2학기 “수리적 빅데이터 개론” 수업을 들으며 기말고사 과제로 마블 영화 속에서 어떤 인물이 중요한지에 대해 추론하는 과제를 수행하였습니다.
+												1. IMDB사이트에서 마블 영화 23편의 시놉시스를 Python프로그램으로 가져왔습니다(Beautiful Soup).
+												2. 가져온 시놉시스 중 명사에 해당하는 부분만을 남기고 다른 단어들을 제거하였습니다.(NLTK)
+												3. 추출된 명사들을 바탕으로 그래프를 만들어 Degree, Betweeness, Clossness Centrality를 분석(Networkx)하였고, 마블 영화에서 자주 등장하고 중요한 인물이 누구인지에 대해 추론하였습니다.
+												</p>
+												<a href="images\Network Analysis - Important People.pdf" target="_blank">Network Analysis - Important People</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 5 LeaderShip Exellence Winner</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Top 4 Web Tester</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
+							<div><b class="text-dark">기술 스택 : </b>React, Typescript, Next.js, Styled-Component, MobX</div>
+							<div><b class="text-dark">주요 기능 : </b> 회원 관리 및 SNS 로그인, 상품 리스트 확인, 상품 상세 정보 확인, 예약 관리, 결제 </div>
+							<p> React </p>
 						</div>
 					</div>
 				</div>

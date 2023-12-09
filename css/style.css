@@ -695,6 +695,18 @@ pre {
 .offset-11 {
   margin-left: 91.66667%; }
 
+.card {
+    margin-bottom: 1em; /* 아코디언 아이템 간의 아래 여백을 없앰 */
+}
+
+.card-header {
+  padding: 0;
+}
+
+.card-header a {
+    background-color: #f8f9fa; /* 클릭한 아코디언 아이템의 배경색 지정 */
+}
+
 @media (min-width: 576px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
