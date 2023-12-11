@@ -504,15 +504,16 @@
 							</div>
 							<div><b class="text-primary">기술 스택 : </b>Python, Pytorch</div>
 							<div><b class="text-primary">연구 분야 : </b>Visualization, Self Supervised Learning, Attention Mechanism, Time Series Forecasting, Spatio-Temporal Feature Extraction</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="resume-wrap d-flex ftco-animate">
+					<div class="resume-wrap d-flex ftco-animate">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="flaticon-ideas"></span>
 						</div>
 						<div class="text pl-3">
-							<span class="date">2022.02-2022.08</span>
+							<span class="date">2019.09-2019.12</span>
+					
 							<div class="d-flex">
 								<h2>Research</h2>
 							</div>
@@ -590,10 +591,8 @@
 												<img src="images\solo_exp1.jpeg" class="accordion-image">
 												</div>
 												<div class="image-container">
-												<div class="image-container">
 												<img src="images\solo_exp2.jpeg" class="accordion-image">
 												</div>
-												<div class="image-container">
 												<b>
 													How To Solve
 												</b>
@@ -603,7 +602,6 @@
 												<div class="image-container">
 												<img src="images\seasaw_loss.png" class="accordion-image">
 												</div>
-												<div class="image-container">
 												<p>
 													2. False Positive를 줄이기 위해 여러 Threshold를 학습 과정에 사용한 Cascade Mask RCNN을 사용하였습니다.
 												</p>
@@ -653,10 +651,64 @@
 										</div>
 									</div>
 								</div>
+								<div id="accordion12">
+									<div class="card">
+										<div class="card-header" id="heading12">
+											<h12 class="mb-0">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+													Improving Un-Supervised Clustering Algorithm
+												</button>
+											</h12>
+										</div>
+
+										<div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion12">
+											<div class="card-body">
+												<b>
+													Objective
+												</b>
+												<p>
+													회사에서 제공하는 서비스 중 하나인 “Self Learning AI”의 비지도 분할(Un-Supervised Clustering) 알고리즘 개선 작업
+												</p>
+												<b>
+													Introduction
+												</b>
+												<p>
+													“Self Learning AI”는 AI 기술을 처음 접해보는 사용자들이 쉽게 AI 기술을 적용해볼 수 있도록 도와주는 서비스입니다.
+												</p>
+												<b>
+													Challenging Point
+												</b>
+												<p>
+													기존 서비스에서 비지도 분류에 사용되던 알고리즘은 “Deep Clustering”이었는데, “Deep Clustering”은 K-means Clustering을 수행한 후, Clustering 결과에따라 Pseudo Label을 만들어 정답 Label과의 Classification 오차 계산하여 최적화를 수행하는 알고리즘이었습니다. 하지만 “Self Learning AI”에서 제공하는 비지도 분할 알고리즘은 학습을 할 수 없기 때문(어떤 이미지가 들어올지를 예측할 수 없음)에 학습을 필요로 하는 Pseudo Label기반의 Clustering 알고리즘은 좋은 성능을 내지 못하였습니다. 
+												</p>
+												<div class="image-container">
+												<img src="images\deep_cluster.png" class="accordion-image">
+												</div>
+												<b>
+													How To Solve
+												</b>
+												<p>
+													학습을 하지 않고도 분할할 수 있는 알고리즘을 만들기 위해선 이미지를 구별할 수 있는 좋은 Semantic Representation을 추출할 수 있어야 합니다. 최근 연구들에 따르면 Self-Supervised Learning 방식을 통해 추출된 Representation들은 Supervised Learning 방식을 통해 추출된 Representation보다 더 유의미하다고 합니다. 따라서 Self-Supervised Learning 방식을 활용하는 모델을 사용해야 한다고 판단하였습니다.
+												</p>
+												<b>
+													Algorithm
+												</b>
+												<p>
+													Self Supervised Learning방식을 사용하는 모델들 중 ViT(Visual Transformer)를 활용하여 이미지 내부의 Object간의 상관관계를 더 잘 학습할 수 있는 DINO(Self-Distillation with No Labels)를 최종 알고리즘으로 선택하게 되었습니다. DINO모델의 출력값을 ViT의 Attention으로 시각화한 결과는 아래의 그림과 같습니다. 
+												</p>
+												<div class="image-container">
+												<img src="images\dino.png" class="accordion-image">
+												</div>
+												<p>
+													DINO에서는 ViT의 구조를 활용하여 이미지 내부의 상관관계를 더 잘 학습할 수 있도록 하고, Teacher, Student Network를 활용하는 Self-Distillation 방법을 통해 Self-Supervised Learning을 수행하였습니다. 
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div><b class="text-primary">기술 스택 : </b>Python, Pytorch</div>
-						<div><b class="text-primary">연구 분야 : </b>Semantic Segmentation, Instance Segmentation, Classification</div>
+							<div><b class="text-primary">기술 스택 : </b>Python, Pytorch</div>
+							<div><b class="text-primary">연구 분야 : </b>Self Supervised Learning, Semantic Segmentation, Instance Segmentation, Classification</div>
 			</div>
 		</div>
 	</section>
