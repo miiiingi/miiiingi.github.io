@@ -52,7 +52,8 @@
 				<div class="col-md-6 col-lg-6 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg); background-position: top center; background-size: contain;">
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/about.jpg); background-position: top center; background-size: contain;">
 						</div>
 					</div>
 				</div>
@@ -62,14 +63,19 @@
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
 							<p>다양한 데이터(정형 데이터, 이미지 데이터, 시계열 데이터)를 이용하여 AI 모델을 개발하였습니다.</p>
-							<p>AI 기술을 서비스에 적용하는 업무(Classification, Object Detection, Segmentation, Active Learning 모델 탑재)를 수행하였습니다.</p>
-							<p>고객에게 납품되는 SI 솔루션을 직접 개발(PyQt)한 경험도 있습니다.</p>
-							<p>AI 기술을 서비스에 Serving하는 것에 관심이 있으며, 이에 대한 전문성을 쌓기 위해 MLops, Backend 분야의 기술을 공부하고 있습니다.</p>
+							<p>AI 모델을 Django Server에서 사용할 수 있도록 Python을 이용하여 Classification, Object Detection,
+								Segmentation, Active Learning 모델을 작성하였습니다.</p>
+							<p>고객에게 납품되는 SI 솔루션을 직접 개발(PyQt)한 경험이 있습니다.</p>
+							<p>AI 기술을 서비스에 서빙하는 것에 관심이 있으며, 이에 대한 전문성을 쌓기 위해 MLops, Backend 기술을 공부하고 있습니다.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>김민기</span></li>
-								<li class="d-flex"><span>Email:</span> <span>kimmingi722@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+82-10-6614-7331</span></li>
-								<li class="d-flex"><span>Blog: </span> <span>https://gitdeep.tistory.com</span></li>
+								<li class="d-flex"><span>Email:</span> <span><a
+											href="mailto:kimmingi722@gmail.com">kimmingi722@gmail.com</a></span></li>
+								<li class="d-flex"><span>Phone: </span> <span><a
+											href="tel:010-6614-7331"></a>+82-10-6614-7331</span></li>
+								<li class="d-flex"><span>Blog: </span> <span><a
+											href="https://gitdeep.tistory.com">https://gitdeep.tistory.com</a></span>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -135,41 +141,49 @@
 								<span class="position">주식회사 알티엠</span>
 								<p><br /></p>
 								<b class="text-primary">주요 업무 </b>
-								<p> - 제조 공정에서 발생하는 이미지 데이터를 이용하여 여러 기업의 PoC, AI바우처 사업의 AI 모델 개발 업무를 수행하였습니다. 그 업무를 수행하기위해 최신 연구 동향을 파악, 적용하고 적용 시 발생하는 문제점들을 해결하였습니다.</p>
+								<p> - 제조 공정에서 발생하는 이미지 데이터를 이용하여 여러 기업의 PoC, AI바우처 사업의 AI 모델 개발 업무를 수행하였습니다. 그 업무를
+									수행하기위해 최신 연구 동향을 파악, 적용하고 적용 시 발생하는 문제점들을 해결하였습니다.</p>
 								<div id="accordion14">
 									<div class="card">
 										<div class="card-header" id="heading14">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
-												반도체 PCB 기판 외관 검사 PoC
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse14" aria-expanded="true"
+													aria-controls="collapse14">
+													반도체 PCB 기판 외관 검사 PoC
 												</button>
 											</h5>
 										</div>
-										<div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion14">
+										<div id="collapse14" class="collapse" aria-labelledby="heading14"
+											data-parent="#accordion14">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												반도체 PCB 기판의 경계성 불량의 넓이를 측정하여 양불 판정 모델을 개발하는 것이 목표였습니다.
+													반도체 PCB 기판의 경계성 불량의 넓이를 측정하여 양불 판정 모델을 개발하는 것이 목표였습니다.
 												</p>
 												<b>
 													정의
 												</b>
 												<p>
-													PCB 기판에서 발생하는 불량 중 돌기와 슬릿을 경계성 불량으로 지칭합니다. PCB 기판에서는 에폭시 위에 구리로 모양을 본뜨게 되는데, 구리가 에폭시로 더 많이 형성되어 예상치 못한 곳으로 전류가 흐르게 되는 경우를 돌기라고 지칭하고 더 적게 형성되어 전류가 흘러야하는데 흐르지 못하는 경우를 슬릿이라고 지칭합니다.
+													PCB 기판에서 발생하는 불량 중 돌기와 슬릿을 경계성 불량으로 지칭합니다. PCB 기판에서는 에폭시 위에 구리로 모양을
+													본뜨게 되는데, 구리가 에폭시로 더 많이 형성되어 예상치 못한 곳으로 전류가 흐르게 되는 경우를 돌기라고 지칭하고 더 적게
+													형성되어 전류가 흘러야하는데 흐르지 못하는 경우를 슬릿이라고 지칭합니다.
 												</p>
 												<b>
 													접근 방법
 												</b>
 												<p>
-													1. 돌기와 슬릿의 넓이를 측정하려면 돌기와 슬릿 부분을 분할하여야합니다. 이를 위해 이진화 알고리즘을 통해서 에폭시와 구리 영역을 분할합니다.
+													1. 돌기와 슬릿의 넓이를 측정하려면 돌기와 슬릿 부분을 분할하여야합니다. 이를 위해 이진화 알고리즘을 통해서 에폭시와
+													구리 영역을 분할합니다.
 												</p>
 												<p>
-													2. Object Detection 모델을 통해 돌기와 슬릿이 일어난 부분을 검출합니다. 
+													2. Object Detection 모델을 통해 돌기와 슬릿이 일어난 부분을 검출합니다.
 												</p>
 												<p>
-													3. 검출된 bbox의 전체 영역과 돌기와 슬릿이 발생된 영역을 계산하고 그 둘의 비율을 계산합니다. 그리고 돌기와 슬릿의 넓이로 정의합니다.  
+													3. 검출된 bbox의 전체 영역과 돌기와 슬릿이 발생된 영역을 계산하고 그 둘의 비율을 계산합니다. 그리고 돌기와 슬릿의
+													넓이로 정의합니다.
 												</p>
 												<p>
 													4. 계산된 돌기와 슬릿의 넓이가 특정 임계값을 넘으면 불량, 아니면 정상이라고 최종적으로 판단합니다.
@@ -178,19 +192,22 @@
 													진행 중 발생한 문제점
 												</b>
 												<p>
-													추가적으로 제공받은 데이터셋에서는 PCB 기판에서 돌기와 슬릿이 대각선 방향으로 존재하였습니다. 따라서 오직 가로, 세로 방향으로 예측하는 기존 Object Detection 모델로는 검출되지 않는 문제가 발생하였습니다. 
+													추가적으로 제공받은 데이터셋에서는 PCB 기판에서 돌기와 슬릿이 대각선 방향으로 존재하였습니다. 따라서 오직 가로, 세로
+													방향으로 예측하는 기존 Object Detection 모델로는 검출되지 않는 문제가 발생하였습니다.
 												</p>
 												<b>
 													해결 방법
-												</b>	
+												</b>
 												<p>
 													위의 문제를 해결하기 위해 두 가지 방법을 생각해보았습니다.
 												</p>
 												<p>
-													1. 푸리에 변환을 통해 가장 강한 직선 성분을 찾고 그 성분과 수직, 수평 방향과의 각도를 계산하여 그 각도의 반대 방향으로 이미지를 회전
+													1. 푸리에 변환을 통해 가장 강한 직선 성분을 찾고 그 성분과 수직, 수평 방향과의 각도를 계산하여 그 각도의 반대
+													방향으로 이미지를 회전
 												</p>
 												<p>
-													2. 기존 Object Detection 모델을 대각선 방향의 물체도 검출할 수 있는 Oriented Bounding Box Detection 모델로 교체
+													2. 기존 Object Detection 모델을 대각선 방향의 물체도 검출할 수 있는 Oriented Bounding
+													Box Detection 모델로 교체
 												</p>
 												<b>
 													결론
@@ -199,9 +216,10 @@
 													첫 번째 방법의 경우 회전 각도를 부정확하게 찾아 bbox를 검출하지 못하는 경우가 있다는 것을 발견하였습니다.
 												</p>
 												<p>
-													두 번째 방법의 경우 학습이 잘 진행되고 있다는 것을 발견하였고,  다양한 상황에서 발생하는 이미지로 학습하면 성능을 향상시킬 수 있을 것이라고 판단하였습니다.
+													두 번째 방법의 경우 학습이 잘 진행되고 있다는 것을 발견하였고, 다양한 상황에서 발생하는 이미지로 학습하면 성능을
+													향상시킬 수 있을 것이라고 판단하였습니다.
 												</p>
-												<p>	
+												<p>
 													따라서, 두 번째 방법을 최종 모델로 결정하여 문제를 해결하였고, 이를 통해 실제 계약까지 성사시킬 수 있었습니다.
 												</p>
 											</div>
@@ -212,15 +230,18 @@
 									<div class="card">
 										<div class="card-header" id="heading21">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
-												수소 연료판 외관 검사 PoC
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse21" aria-expanded="true"
+													aria-controls="collapse21">
+													수소 연료판 외관 검사 PoC
 												</button>
 											</h5>
 										</div>
-										<div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion21">
+										<div id="collapse21" class="collapse" aria-labelledby="heading21"
+											data-parent="#accordion21">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
 													수소 연료판에서 발생하는 외관 불량을 검출하는 것이 목표였습니다.
@@ -229,16 +250,17 @@
 													접근 방법
 												</b>
 												<p>
-												1. 이미지(크기: (4096, 29000))에서 불필요한 부분을 제거합니다.
+													1. 이미지(크기: (4096, 29000))에서 불필요한 부분을 제거합니다.
 												</p>
 												<p>
-												2. 불필요한 부분이 제거된 이미지의 크기가 매우 크기 때문에 한 번에 학습하는 것이 힘들어 격자 모양으로 이미지를 분할합니다.
+													2. 불필요한 부분이 제거된 이미지의 크기가 매우 크기 때문에 한 번에 학습하는 것이 힘들어 격자 모양으로 이미지를
+													분할합니다.
 												</p>
 												<p>
-												3. Object Detection 모델로 분할된 이미지를 추론하여 불량을 검출하고 bbox의 정보를 저장합니다.
+													3. Object Detection 모델로 분할된 이미지를 추론하여 불량을 검출하고 bbox의 정보를 저장합니다.
 												</p>
 												<p>
-												4. 분할된 이미지를 원래 이미지로 복원한 후, 저장된 bbox를 이용하여 원래 이미지에 모델 예측 결과를 시각화합니다. 
+													4. 분할된 이미지를 원래 이미지로 복원한 후, 저장된 bbox를 이용하여 원래 이미지에 모델 예측 결과를 시각화합니다.
 												</p>
 												<b>
 													진행 중 발생한 문제점
@@ -247,25 +269,30 @@
 													1. 얻어지는 이미지가 위치와 조명이 매번 달라지기 떄문에 고정된 알고리즘으로 불필요한 부분을 제거할 수가 없었습니다.
 												</p>
 												<p>
-													2. 업체 측에서 '이미지를 분할하고 예측하고 합치는 과정을 1초 내로 완료하고 성능은 유지해달라'는 요구 사항이 있었습니다.
+													2. 업체 측에서 '이미지를 분할하고 예측하고 합치는 과정을 1초 내로 완료하고 성능은 유지해달라'는 요구 사항이
+													있었습니다.
 												</p>
 												<b>
 													해결 방법
 												</b>
 												<p>
-												1. 얻어지는 이미지의 위치와 조명은 다르지만, 배경과 수소 연료판으로 나누어지고 이들의 색상 구성이 다르다(e.g. 배경은 흰색이고 수소 연료판은 검은색)는 사실을 발견하였습니다. 
+													1. 얻어지는 이미지의 위치와 조명은 다르지만, 배경과 수소 연료판으로 나누어지고 이들의 색상 구성이 다르다(e.g.
+													배경은 흰색이고 수소 연료판은 검은색)는 사실을 발견하였습니다.
 												</p>
 												<p>
-													이 사실로부터 x축과 y축으로 이미지를 사영시켜 수소 연료판이 등장하는 부분과 끝나는 부분을 찾아내었고, 그 부분을 기준으로 이미지를 분할하여 불필요한 부분을 제거하였습니다.
+													이 사실로부터 x축과 y축으로 이미지를 사영시켜 수소 연료판이 등장하는 부분과 끝나는 부분을 찾아내었고, 그 부분을
+													기준으로 이미지를 분할하여 불필요한 부분을 제거하였습니다.
 												</p>
 												<p>
-													2. 기존 사용하던 모델은 two-stage 모델이었는데, 이를 성능이 준수하면서 추론 시간이 빠른 one-stage 모델로 변경하여 문제를 해결하였습니다.
+													2. 기존 사용하던 모델은 two-stage 모델이었는데, 이를 성능이 준수하면서 추론 시간이 빠른 one-stage
+													모델로 변경하여 문제를 해결하였습니다.
 												</p>
 												<b>
 													결론
 												</b>
 												<p>
-													불필요한 부분을 적응적으로 제거할 수 있는 알고리즘을 새로 만들고 기존 모델을 교체하여 업체를 만족시킬 수 있었고, 그로인해 실제 계약까지 성사시킬 수 있었습니다. 
+													불필요한 부분을 적응적으로 제거할 수 있는 알고리즘을 새로 만들고 기존 모델을 교체하여 업체를 만족시킬 수 있었고,
+													그로인해 실제 계약까지 성사시킬 수 있었습니다.
 												</p>
 											</div>
 										</div>
@@ -275,52 +302,58 @@
 									<div class="card">
 										<div class="card-header" id="heading18">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
-												AI바우처: 쉴드캔 외관 검사
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse18" aria-expanded="true"
+													aria-controls="collapse18">
+													AI바우처: 쉴드캔 외관 검사
 												</button>
 											</h5>
 										</div>
-										<div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordion18">
+										<div id="collapse18" class="collapse" aria-labelledby="heading18"
+											data-parent="#accordion18">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												반도체 차폐에 사용되는 쉴드캔의 외관 불량을 검출하는 것이 목표였습니다.
+													반도체 차폐에 사용되는 쉴드캔의 외관 불량을 검출하는 것이 목표였습니다.
 												</p>
 												<b>
 													접근 방법
 												</b>
 												<p>
-												1. 트레이 단위(쉴드캔이 30개 적재됨)로 얻어지는 이미지를 쉴드캔 단위로 분할합니다. 
+													1. 트레이 단위(쉴드캔이 30개 적재됨)로 얻어지는 이미지를 쉴드캔 단위로 분할합니다.
 												</p>
 												<p>
-												2. 분할된 이미지로부터 Object Detection 모델을 이용하여 외관 불량을 검출합니다.
+													2. 분할된 이미지로부터 Object Detection 모델을 이용하여 외관 불량을 검출합니다.
 												</p>
 												<p>
-												3. 생성된 모델을 C++로 작성된 sdk에서 읽을 수 있는 형태로 배포합니다.
+													3. 생성된 모델을 C++로 작성된 sdk에서 읽을 수 있는 형태로 배포합니다.
 												</p>
 												<b>
 													진행 중 발생한 문제점
 												</b>
 												<p>
-												1. 얻어지는 이미지가 위치와 조명이 매번 달라지기 떄문에 고정된 알고리즘으로 쉴드캔 단위로 분할할 수 없었습니다.
+													1. 얻어지는 이미지가 위치와 조명이 매번 달라지기 떄문에 고정된 알고리즘으로 쉴드캔 단위로 분할할 수 없었습니다.
 												</p>
 												<p>
 													2. 불량이 작고 흐릿하여 초기에 사용한 one-stage 모델로 검출할 수 없었습니다.
 												</p>
 												<p>
-													3. torch script로 생성된 pt 파일이 제대로 동작하지 않았습니다. 
+													3. torch script로 생성된 pt 파일이 제대로 동작하지 않았습니다.
 												</p>
 												<b>
 													해결 방법
 												</b>
 												<p>
-												1. 얻어지는 이미지의 위치와 조명은 다르지만, 트레이와 쉴드캔으로 나누어지고 이들의 색상 구성이 다르다(e.g. 배경은 흰색이고 수소 연료판은 검은색)는 사실을 발견하였습니다.
-												이 사실로부터 x축과 y축으로 이미지를 사영시켜 쉴드캔이 등장하는 부분과 끝나는 부분을 찾아내었고, 그 부분을 기준으로 쉴드캔을 분할하여 문제를 해결하였습니다.
+													1. 얻어지는 이미지의 위치와 조명은 다르지만, 트레이와 쉴드캔으로 나누어지고 이들의 색상 구성이 다르다(e.g. 배경은
+													흰색이고 수소 연료판은 검은색)는 사실을 발견하였습니다.
+													이 사실로부터 x축과 y축으로 이미지를 사영시켜 쉴드캔이 등장하는 부분과 끝나는 부분을 찾아내었고, 그 부분을 기준으로
+													쉴드캔을 분할하여 문제를 해결하였습니다.
 												</p>
 												<p>
-													2. one-stage 모델보다 검출률이 좋은 two-stage 모델을 사용하였습니다. two-stage 모델 중 작은 물체를 검출하는 것에 특화된 모델로 기존 모델을 교체하였습니다.
+													2. one-stage 모델보다 검출률이 좋은 two-stage 모델을 사용하였습니다. two-stage 모델 중 작은
+													물체를 검출하는 것에 특화된 모델로 기존 모델을 교체하였습니다.
 												</p>
 												<p>
 													3. torch script로 진행하던 방식을 onnx 방식으로 교체하였습니다.
@@ -329,12 +362,13 @@
 													결론
 												</b>
 												<p>
-												새로운 two-stage 모델을 이용하여 불량을 잘 검출하여 모델을 배포할 수 있었고, 이로 인해 추가적인 솔루션 발주를 달성할 수 있었습니다.
+													새로운 two-stage 모델을 이용하여 불량을 잘 검출하여 모델을 배포할 수 있었고, 이로 인해 추가적인 솔루션 발주를
+													달성할 수 있었습니다.
 												</p>
 												<p>
 													또한, 트레이 단위 이미지를 쉴드캔 단위 이미지로 자르는 방법을 특허로 출원하였습니다.
 												</p>
-													<a href="images\Patent_RTM.pdf" target="_blank">Patent</a>
+												<a href="images\Patent_RTM.pdf" target="_blank">Patent</a>
 											</div>
 										</div>
 									</div>
@@ -343,45 +377,49 @@
 									<div class="card">
 										<div class="card-header" id="heading16">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
-												반도체용 정밀 밸브 외관 검사 PoC
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse16" aria-expanded="true"
+													aria-controls="collapse16">
+													반도체용 정밀 밸브 외관 검사 PoC
 												</button>
 											</h5>
 										</div>
-										<div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion16">
+										<div id="collapse16" class="collapse" aria-labelledby="heading16"
+											data-parent="#accordion16">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												반도체용 정밀 밸브에서 발생하는 불량을 검출하고 라벨지의 글자를 검출하는 것이 목표였습니다.
+													반도체용 정밀 밸브에서 발생하는 불량을 검출하고 라벨지의 글자를 검출하는 것이 목표였습니다.
 												</p>
 												<b>
 													접근 방법
 												</b>
 												<p>
-												1. 밸브에서 검출되는 불량을 Object Detection 모델로 검출합니다.
+													1. 밸브에서 검출되는 불량을 Object Detection 모델로 검출합니다.
 												</p>
 												<p>
-												2. 라벨지에서 발생하는 글자를 파파고의 pre-trained 모델로 검출합니다.
+													2. 라벨지에서 발생하는 글자를 파파고의 pre-trained 모델로 검출합니다.
 												</p>
 												<b>
 													진행 중 발생한 문제점
 												</b>
 												<p>
-												1. 파파고의 pre-trained 모델로 추론하였을 때, 글자가 제대로 검출되지 않는 현상이 있어 pre-trained 모델을 학습해야하는 상황이 발생하였습니다.
+													1. 파파고의 pre-trained 모델로 추론하였을 때, 글자가 제대로 검출되지 않는 현상이 있어 pre-trained
+													모델을 학습해야하는 상황이 발생하였습니다.
 												</p>
 												<b>
 													해결 방법
-												</b>	
+												</b>
 												<p>
-												Fine Tuning기법 중 하나인 LoRA를 이용하여 큰 규모의 pre-trained 모델을 학습하였습니다.
+													Fine Tuning기법 중 하나인 LoRA를 이용하여 큰 규모의 pre-trained 모델을 학습하였습니다.
 												</p>
 												<b>
 													결론
 												</b>
 												<p>
-												LoRA를 이용하여 학습을 진행하여 라벨지 글자의 검출률을 높일 수 있었고, 실제 계약까지 성사시킬 수 있었습니다.
+													LoRA를 이용하여 학습을 진행하여 라벨지 글자의 검출률을 높일 수 있었고, 실제 계약까지 성사시킬 수 있었습니다.
 												</p>
 											</div>
 										</div>
@@ -391,15 +429,18 @@
 									<div class="card">
 										<div class="card-header" id="heading15">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
-												가스용기 벨브 외관 검사 PoC
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse15" aria-expanded="true"
+													aria-controls="collapse15">
+													가스용기 벨브 외관 검사 PoC
 												</button>
 											</h5>
 										</div>
-										<div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion15">
+										<div id="collapse15" class="collapse" aria-labelledby="heading15"
+											data-parent="#accordion15">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
 													가스용기에서 발생하는 외관 불량을 검출하는 것이 목표였습니다.
@@ -411,7 +452,9 @@
 													1. 불량 부분 주위의 빨간색 박스를 제거합니다.
 												</p>
 												<p>
-													(업체로부터 이미지를 전달받을 때, 불량이 발생한 부분 주위에 빨간색의 박스가 그려진 상태로 전달받았습니다. 이 상태로 모델을 학습하게 되면 모델이 빨간색 박스를 학습하게 될 확률이 높기 때문에 이를 제거하는 과정이 필요하다고 판단하였습니다.)
+													(업체로부터 이미지를 전달받을 때, 불량이 발생한 부분 주위에 빨간색의 박스가 그려진 상태로 전달받았습니다. 이 상태로
+													모델을 학습하게 되면 모델이 빨간색 박스를 학습하게 될 확률이 높기 때문에 이를 제거하는 과정이 필요하다고
+													판단하였습니다.)
 												</p>
 												<p>
 													2. 외관 불량을 Object Detection 모델로 검출합니다.
@@ -420,69 +463,83 @@
 													진행 중 발생한 문제점
 												</b>
 												<p>
-													빨간색 박스를 없애기 위해 OpenCV의 inpaint 함수를 사용하였는데, 완벽하게 지워지지 않는 것을 발견하였습니다. 이미지를 확대해보니 단일한 색의 빨간색(255, 0, 0)이 아니라 명도와 채도가 변하면서 빨간색이 칠해져있다는 것을 발견하였습니다. 따라서 범위를 지정하는 OpenCV의 inpaint 함수가 제대로 동작하지 못한다는 결론을 얻을 수 있었습니다.
+													빨간색 박스를 없애기 위해 OpenCV의 inpaint 함수를 사용하였는데, 완벽하게 지워지지 않는 것을 발견하였습니다.
+													이미지를 확대해보니 단일한 색의 빨간색(255, 0, 0)이 아니라 명도와 채도가 변하면서 빨간색이 칠해져있다는 것을
+													발견하였습니다. 따라서 범위를 지정하는 OpenCV의 inpaint 함수가 제대로 동작하지 못한다는 결론을 얻을 수
+													있었습니다.
 												</p>
 												<b>
 													해결 방법
 												</b>
 												<p>
-													기존 사용 방법인 OpenCV의 inpaint 함수를 Generation 방법을 사용하는 Inpainting 모델로 교체하였습니다.
+													기존 사용 방법인 OpenCV의 inpaint 함수를 Generation 방법을 사용하는 Inpainting 모델로
+													교체하였습니다.
 												</p>
 												<b>
 													결론
 												</b>
 												<p>
-													기존의 문제였던 빨간색 박스를 성공적으로 제거하여 일반화 성능이 높은 Object Detection 모델을 개발할 수 있었고, 업체측으로부터 좋은 평가를 받을 수 있었습니다.
+													기존의 문제였던 빨간색 박스를 성공적으로 제거하여 일반화 성능이 높은 Object Detection 모델을 개발할 수
+													있었고, 업체측으로부터 좋은 평가를 받을 수 있었습니다.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<p> - 팀에서 가지고 있는 기술들을 고객에게 빠르게 보여주기 위해, PyQT를 이용하여 프로토타입 프로그램(라벨링, 추론)을 개발하였습니다.</p> 
+								<p> - 팀에서 가지고 있는 기술들을 고객에게 빠르게 보여주기 위해, PyQT를 이용하여 프로토타입 프로그램(라벨링, 추론)을 개발하였습니다.</p>
 								<div id="accordion19">
 									<div class="card">
 										<div class="card-header" id="heading19">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
-												라벨링 프로그램 리팩토링 및 신규 기능 추가
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse19" aria-expanded="true"
+													aria-controls="collapse19">
+													라벨링 프로그램 리팩토링 및 신규 기능 추가
 												</button>
 											</h5>
 										</div>
-										<div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordion19">
+										<div id="collapse19" class="collapse" aria-labelledby="heading19"
+											data-parent="#accordion19">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												라벨링 프로그램 리팩토링 및 신규 기능을 추가하는 것이 목표였습니다. 
+													라벨링 프로그램 리팩토링 및 신규 기능을 추가하는 것이 목표였습니다.
 												</p>
 												<b>
-												세부 내용
+													세부 내용
 												</b>
 												<p>
-												1. 기존 코드에서 shape 객체(e.g. point, line, rectangle) 마다 같은 기능을 하는 함수들이 각각 선언되어있었습니다. 이는 추가적으로 shape 객체를 작성할 때 공수가 많이 들기도하고 shape 객체가 많아졌을 때, 동일한 동작을 수행하지 않을 가능성이 높습니다. 
+													1. 기존 코드에서 shape 객체(e.g. point, line, rectangle) 마다 같은 기능을 하는 함수들이
+													각각 선언되어있었습니다. 이는 추가적으로 shape 객체를 작성할 때 공수가 많이 들기도하고 shape 객체가 많아졌을
+													때, 동일한 동작을 수행하지 않을 가능성이 높습니다.
 												</p>
 												<p>
-												따라서 shape 클래스를 만들고 각각의 shape 객체들이 shape 클래스를 상속받아 shape 객체들이 일관성 및 안정성을 꾀할 수 있도록 수정하였습니다. 
+													따라서 shape 클래스를 만들고 각각의 shape 객체들이 shape 클래스를 상속받아 shape 객체들이 일관성 및
+													안정성을 꾀할 수 있도록 수정하였습니다.
 												</p>
 												<p>
-												2. 기존 라벨링 프로그램에서 라벨링 객체에 마우스를 가져갔을 때, 강조되는 기능과 라벨링 객체를 이동, 수정 하는 기능이 없었는데, 이를 추가하였습니다.
+													2. 기존 라벨링 프로그램에서 라벨링 객체에 마우스를 가져갔을 때, 강조되는 기능과 라벨링 객체를 이동, 수정 하는 기능이
+													없었는데, 이를 추가하였습니다.
 												</p>
 												<p>
-												3. 지난 프로젝트에서 사용하였던 Generation 기반의 Inpainting 모델을 추가하여 특정 영역을 지우는 기능을 추가하였습니다. 
+													3. 지난 프로젝트에서 사용하였던 Generation 기반의 Inpainting 모델을 추가하여 특정 영역을 지우는 기능을
+													추가하였습니다.
 												</p>
 												<b>
 													결론
 												</b>
 												<p>
-												PyQt를 처음 사용해보았기 때문에 배우는 것이 어려웠지만, 성공적으로 기능을 추가할 수 있었고, 기능이 추가된 프로그램을 실제 고객에게 보여주었을 때, 호평을 들을 수 있었습니다. 
+													PyQt를 처음 사용해보았기 때문에 배우는 것이 어려웠지만, 성공적으로 기능을 추가할 수 있었고, 기능이 추가된 프로그램을
+													실제 고객에게 보여주었을 때, 호평을 들을 수 있었습니다.
 												</p>
 												<b>
 													데모 영상
 												</b>
 												<video width="100%" height="auto" controls>
-												<source src="images\lens_demo.mp4" type="video/mp4">
-												Your browser does not support the video tag.
+													<source src="images\lens_demo.mp4" type="video/mp4">
+													Your browser does not support the video tag.
 												</video>
 											</div>
 										</div>
@@ -492,27 +549,33 @@
 									<div class="card">
 										<div class="card-header" id="heading20">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse20" aria-expanded="true" aria-controls="collapse20">
-												업체의 요구 사항에 맞는 추론 프로그램 개발
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse20" aria-expanded="true"
+													aria-controls="collapse20">
+													업체의 요구 사항에 맞는 추론 프로그램 개발
 												</button>
 											</h5>
 										</div>
-										<div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordion20">
+										<div id="collapse20" class="collapse" aria-labelledby="heading20"
+											data-parent="#accordion20">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												'Hubble'서비스가 수행할 수 없는 요구 사항을 충족시키기 위해 업체의 요구 사항에 맞는 추론 프로그램을 개발하였습니다.
+													'Hubble'서비스가 수행할 수 없는 요구 사항을 충족시키기 위해 업체의 요구 사항에 맞는 추론 프로그램을
+													개발하였습니다.
 												</p>
 												<b>
-												세부 사항
+													세부 사항
 												</b>
 												<p>
-													1. 이미지의 불필요한 부분을 제거한 후 이미지를 분할하고 불량을 검출한 후, 결과를 다시 모으는 작업과 Object Detection 모델의 Threshold를 조절하여 예측 결과를 생성하는 기능은 'Hubble'서비스에서는 수행할 수 없었습니다. (수소 연료판 외관 검사 PoC 참고) 
+													1. 이미지의 불필요한 부분을 제거한 후 이미지를 분할하고 불량을 검출한 후, 결과를 다시 모으는 작업과 Object
+													Detection 모델의 Threshold를 조절하여 예측 결과를 생성하는 기능은 'Hubble'서비스에서는 수행할 수
+													없었습니다. (수소 연료판 외관 검사 PoC 참고)
 												</p>
 												<p>
-													2. 'Hubble'서비스에서는 OCR 모델을 지원하지 않았습니다. 
+													2. 'Hubble'서비스에서는 OCR 모델을 지원하지 않았습니다.
 													(반도체용 정밀 밸브 외관 검사 PoC 참고)
 												</p>
 												<p>
@@ -532,16 +595,16 @@
 													1.
 												</b>
 												<video width="100%" height="auto" controls>
-												<source src="images\hanmech_demo.mp4" type="video/mp4">
-												Your browser does not support the video tag.
+													<source src="images\hanmech_demo.mp4" type="video/mp4">
+													Your browser does not support the video tag.
 												</video>
 												<p><br> </p>
 												<b>
 													2.
 												</b>
 												<video width="100%" height="auto" controls>
-												<source src="images\advancekr_demo.mp4" type="video/mp4">
-												Your browser does not support the video tag.
+													<source src="images\advancekr_demo.mp4" type="video/mp4">
+													Your browser does not support the video tag.
 												</video>
 											</div>
 										</div>
@@ -552,57 +615,69 @@
 									<div class="card">
 										<div class="card-header" id="heading13">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
-												'Hubble'서비스의 AI 모델 탑재 및 개선 작업 진행
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse13" aria-expanded="true"
+													aria-controls="collapse13">
+													'Hubble'서비스의 AI 모델 탑재 및 개선 작업 진행
 												</button>
 											</h5>
 										</div>
-										<div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion13">
+										<div id="collapse13" class="collapse" aria-labelledby="heading13"
+											data-parent="#accordion13">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												1. Classification, Object Detection, Segmentation 모델 탑재 및 개선
+													1. Classification, Object Detection, Segmentation 모델 탑재 및 개선
 												</p>
 												<p>
-												2. Active Learning 기법을 서비스 내부에 탑재
+													2. Active Learning 기법을 서비스 내부에 탑재
 												</p>
 												<b>
-												 세부내용
+													세부내용
 												</b>
 												<p>
-													1. 'Hubble'서비스는 적은 수의 샘플로도 높은 성능을 달성할 수 있다는 것이 제품의 셀링포인트 중 하나였습니다. 
+													1. 'Hubble'서비스는 적은 수의 샘플로도 높은 성능을 달성할 수 있다는 것이 제품의 셀링포인트 중 하나였습니다.
 												</p>
 												<p>
-													그 목표를 달성하기 위해 Active Learning 기법을 서비스에 탑재하였습니다. Active Learning 기법은 데이터 중에서 성능을 가장 많이 높일 수 있는 데이터를 우선순위로 학습하는 기법을 일컫습니다.  
+													그 목표를 달성하기 위해 Active Learning 기법을 서비스에 탑재하였습니다. Active Learning 기법은
+													데이터 중에서 성능을 가장 많이 높일 수 있는 데이터를 우선순위로 학습하는 기법을 일컫습니다.
 												</p>
 												<p>
-													'Hubble'서비스에 학습할 데이터를 선택할 때, 데이터의 불확실성을 계산하여 이 수치가 높은 데이터를 먼저 학습을 진행하게 되는 방법을 적용하였습니다. 
+													'Hubble'서비스에 학습할 데이터를 선택할 때, 데이터의 불확실성을 계산하여 이 수치가 높은 데이터를 먼저 학습을
+													진행하게 되는 방법을 적용하였습니다.
 												</p>
 												<p>
-													이 방법을 적용하기 위해 데이터의 불확실성을 계산하는 방법을 이해하고 이를 코드로 구현하는 작업을 수행하였습니다.  
+													이 방법을 적용하기 위해 데이터의 불확실성을 계산하는 방법을 이해하고 이를 코드로 구현하는 작업을 수행하였습니다.
 												</p>
 												<p>
-													2. Classification, Object Detection, Segmentation 모델을 'Hubble'서비스에 탑재하였습니다
+													2. 'Hubble'서비스에서는 Python Server로 Django를 이용하고, Backend Server로
+													NodeJS를 이용하였었는데,
+													Django Server에서 사용할 수 있도록 Python을 이용하여 Classification, Object
+													Detection, Segmentation, Active Learning 모델을 작성하였습니다.
 												</p>
 												<b>
-													진행 중 발생한 문제점	
+													진행 중 발생한 문제점
 												</b>
 												<p>
-												충분한 사전 실험을 통해 초기 모델을 선정하였지만, 초기에 탑재하였던 Segmentation 모델은 실험하였던 데이터셋에서만 잘 동작하는 문제가 있었습니다. 하지만, 실제 서비스에서는 어떤 데이터셋이 입력될 지 모르기때문에 다양한 데이터셋에서 잘 동작하는 모델로 교체하는 것이 필요했습니다.
+													충분한 사전 실험을 통해 초기 모델을 선정하였지만, 초기에 탑재하였던 Segmentation 모델은 실험하였던
+													데이터셋에서만 잘 동작하는 문제가 있었습니다. 하지만, 실제 서비스에서는 어떤 데이터셋이 입력될 지 모르기때문에 다양한
+													데이터셋에서 잘 동작하는 모델로 교체하는 것이 필요했습니다.
 												</p>
 												<p>
-												따라서 기존 모델을 다양한 데이터셋에서도 잘 동작하는 모델로 교체하는 작업을 진행하였습니다.
+													따라서 기존 모델을 다양한 데이터셋에서도 잘 동작하는 모델로 교체하는 작업을 진행하였습니다.
 												</p>
 												<b>
 													결론
 												</b>
 												<p>
-													Active Learning 기술을 이용하였을 때, 1/10 정도의 데이터로 동일한 성능을 달성할 수 있다는 것을 실험적으로 입증하였고, Segmentation 모델을 교체함으로써 다양한 데이터셋에서도 모델의 성능이 좋다는 것을 실험적으로 입증하였습니다.
+													Active Learning 기술을 이용하였을 때, 1/10 정도의 데이터로 동일한 성능을 달성할 수 있다는 것을
+													실험적으로 입증하였고, Segmentation 모델을 교체함으로써 다양한 데이터셋에서도 모델의 성능이 좋다는 것을
+													실험적으로 입증하였습니다.
 												</p>
 												<p>
-													전시회, 홈페이지 등에서 모객하여 20여건의 서비스 데모 요청을 받을 수 있었습니다. 
+													전시회, 홈페이지 등에서 모객하여 20여건의 서비스 데모 요청을 받을 수 있었습니다.
 												</p>
 											</div>
 										</div>
@@ -611,7 +686,8 @@
 								<b class="text-primary">기술 스택</b>
 								<p>Python, Pytorch, PyQt</p>
 								<b class="text-primary">활용 기술</b>
-								<p>Object Detection, Semantic Segmentation, OCR, Generation, Large Model FineTuning, Active Learning, Uncertainty</p>
+								<p>Object Detection, Semantic Segmentation, OCR, Generation, Large Model FineTuning,
+									Active Learning, Uncertainty</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -629,42 +705,48 @@
 									<div class="card">
 										<div class="card-header" id="heading11">
 											<h5 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-												반도체 PCB 기판 외관 검사 PoC
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse11" aria-expanded="true"
+													aria-controls="collapse11">
+													반도체 PCB 기판 외관 검사 PoC
 												</button>
 											</h5>
 										</div>
-										<div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion11">
+										<div id="collapse11" class="collapse" aria-labelledby="heading11"
+											data-parent="#accordion11">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
-												반도체 PCB기판의 양불 판정을 수행하는 모델을 개발하는 것이 목표였습니다. 
+													반도체 PCB기판의 양불 판정을 수행하는 모델을 개발하는 것이 목표였습니다.
 												</p>
 												<b>
 													접근 방법
 												</b>
 												<p>
-												1. 이미지가 들어오면 불량 유형을 기준으로 분류 작업을 진행합니다.
+													1. 이미지가 들어오면 불량 유형을 기준으로 분류 작업을 진행합니다.
 												</p>
 												<p>
-													2. 각 불량 유형에서 발생하는 불량 부위의 크기를 재서 고객사의 Spec에 따라 양/불 판정을 진행할 수 있도록 모델을 개발합니다.
+													2. 각 불량 유형에서 발생하는 불량 부위의 크기를 재서 고객사의 Spec에 따라 양/불 판정을 진행할 수 있도록 모델을
+													개발합니다.
 												</p>
 												<b>
-												진행 중 발생한 문제점
+													진행 중 발생한 문제점
 												</b>
 												<p>
-												PCB 기판의 경우, 큰 크기의 불량과 작은 크기의 불량이 모두 발생하고, 작은 불량의 경우 크기가 매우 작기 때문에 초기 작업 모델로 크기에 대해 강건하고 세밀하게 분할할 수 있는 모델을 사용했습니다.
+													PCB 기판의 경우, 큰 크기의 불량과 작은 크기의 불량이 모두 발생하고, 작은 불량의 경우 크기가 매우 작기 때문에 초기
+													작업 모델로 크기에 대해 강건하고 세밀하게 분할할 수 있는 모델을 사용했습니다.
 												</p>
 												<p>
-													하지만 특정 불량 유형에서 너무 세밀하게 분할하여 추론하는 현상을 발견하였습니다. 
+													하지만 특정 불량 유형에서 너무 세밀하게 분할하여 추론하는 현상을 발견하였습니다.
 												</p>
 												<b>
 													해결 방법
 												</b>
 												<p>
-													기존에 사용하던 모델을 크기에 강건하고, 너무 세밀하게 분할하는 경우 가중치를 업데이트 하지 않도록 제약을 줄 수 있는 모델로 교체하였습니다.
+													기존에 사용하던 모델을 크기에 강건하고, 너무 세밀하게 분할하는 경우 가중치를 업데이트 하지 않도록 제약을 줄 수 있는
+													모델로 교체하였습니다.
 												</p>
 												<b>
 													결론
@@ -681,25 +763,29 @@
 									<div class="card">
 										<div class="card-header" id="heading12">
 											<h12 class="mb-0">
-												<button class="btn btn-link" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-												'Self Learning AI' 서비스의 비지도 분류 모델 개선 작업
+												<button class="btn btn-link" data-toggle="collapse"
+													data-target="#collapse12" aria-expanded="true"
+													aria-controls="collapse12">
+													'Self Learning AI' 서비스의 비지도 분류 모델 개선 작업
 												</button>
 											</h12>
 										</div>
 
-										<div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion12">
+										<div id="collapse12" class="collapse" aria-labelledby="heading12"
+											data-parent="#accordion12">
 											<div class="card-body">
 												<b>
-												목표
+													목표
 												</b>
 												<p>
 													'Self Learning AI'의 비지도 분할(Un-Supervised Clustering) 모델 개선 작업 진행
 												</p>
 												<b>
-												세부 내용
+													세부 내용
 												</b>
 												<p>
-													기존에 사용되던 비지도 분류 모델이 처음 보는 이미지에 대해서 잘 분류하지 못해 이를 일반화 성능이 좋은 모델로 교체하는 작업을 진행하였습니다. 
+													기존에 사용되던 비지도 분류 모델이 처음 보는 이미지에 대해서 잘 분류하지 못해 이를 일반화 성능이 좋은 모델로 교체하는
+													작업을 진행하였습니다.
 												</p>
 											</div>
 										</div>
@@ -708,7 +794,8 @@
 								<b class="text-primary">기술 스택</b>
 								<p>Python, Pytorch</p>
 								<b class="text-primary">활용 기술</b>
-								<p>Self Supervised Learning, Semantic Segmentation, Instance Segmentation, Classification</p>
+								<p>Self Supervised Learning, Semantic Segmentation, Instance Segmentation,
+									Classification</p>
 							</div>
 						</div>
 					</div>
@@ -729,22 +816,29 @@
 										<div class="card">
 											<div class="card-header" id="heading5">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse5" aria-expanded="true"
+														aria-controls="collapse5">
 														대구시 혼잡 구간 예측
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion5">
+											<div id="collapse5" class="collapse" aria-labelledby="heading5"
+												data-parent="#accordion5">
 												<div class="card-body">
 													<p>
-													4학년 2학기에 “수리적 빅데이터 개론”수업을 들으며 중간고사 과제로 대구시의 혼잡 구간을 예측하였습니다.
+														4학년 2학기에 “수리적 빅데이터 개론”수업을 들으며 중간고사 과제로 대구시의 혼잡 구간을 예측하였습니다.
 													</p>
 													<p>
-													대구시 도로의 연결 정보를 바탕으로 그래프를 구성하였습니다. 그 후, Degree Centrality, Betweeness Centrality, Clossness Centrality 척도를 계산하였고, 이를 통해 대구시 도로가 Random Graph Network라는 것을 알 수 있었습니다. 그리고 Degree, Betweeness, Closseness Centrality를 통해 대구에서 어떤 지역이 혼잡 구간인지에 대해 분석하였습니다.
+														대구시 도로의 연결 정보를 바탕으로 그래프를 구성하였습니다. 그 후, Degree Centrality,
+														Betweeness Centrality, Clossness Centrality 척도를 계산하였고, 이를 통해 대구시
+														도로가 Random Graph Network라는 것을 알 수 있었습니다. 그리고 Degree, Betweeness,
+														Closseness Centrality를 통해 대구에서 어떤 지역이 혼잡 구간인지에 대해 분석하였습니다.
 													</p>
 													</p>
-													<a href="images\Network Analysis-Traffic Congestion.pdf" target="_blank">Network Analysis-Traffic Congestion</a>
+													<a href="images\Network Analysis-Traffic Congestion.pdf"
+														target="_blank">Network Analysis-Traffic Congestion</a>
 												</div>
 											</div>
 										</div>
@@ -753,28 +847,36 @@
 										<div class="card">
 											<div class="card-header" id="heading6">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse6" aria-expanded="true"
+														aria-controls="collapse6">
 														마블 영화 속 주요 인물 추론
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion6">
+											<div id="collapse6" class="collapse" aria-labelledby="heading6"
+												data-parent="#accordion6">
 												<div class="card-body">
 													<p>
-													4학년 2학기 “수리적 빅데이터 개론” 수업을 들으며 기말고사 과제로 마블 영화 속에서 어떤 인물이 중요한지에 대해 추론하는 과제를 수행하였습니다.
+														4학년 2학기 “수리적 빅데이터 개론” 수업을 들으며 기말고사 과제로 마블 영화 속에서 어떤 인물이 중요한지에 대해
+														추론하는 과제를 수행하였습니다.
 													</p>
 													<p>
-													1. IMDB사이트에서 마블 영화 23편의 시놉시스를 Python프로그램으로 가져왔습니다(Beautiful Soup).
+														1. IMDB사이트에서 마블 영화 23편의 시놉시스를 Python프로그램으로 가져왔습니다(Beautiful
+														Soup).
 													</p>
 													<p>
-													2. 가져온 시놉시스 중 명사에 해당하는 부분만을 남기고 다른 단어들을 제거하였습니다.(NLTK)
+														2. 가져온 시놉시스 중 명사에 해당하는 부분만을 남기고 다른 단어들을 제거하였습니다.(NLTK)
 													</p>
 													<p>
-													3. 추출된 명사들을 바탕으로 그래프를 만들어 Degree, Betweeness, Clossness Centrality를 분석(Networkx)하였고, 마블 영화에서 자주 등장하고 중요한 인물이 누구인지에 대해 추론하였습니다.
+														3. 추출된 명사들을 바탕으로 그래프를 만들어 Degree, Betweeness, Clossness
+														Centrality를 분석(Networkx)하였고, 마블 영화에서 자주 등장하고 중요한 인물이 누구인지에 대해
+														추론하였습니다.
 													</p>
 													</p>
-													<a href="images\Network Analysis - Important People.pdf" target="_blank">Network Analysis - Important People</a>
+													<a href="images\Network Analysis - Important People.pdf"
+														target="_blank">Network Analysis - Important People</a>
 												</div>
 											</div>
 										</div>
@@ -798,30 +900,40 @@
 										<div class="card">
 											<div class="card-header" id="heading1">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-													시계열 공정 센서 데이터 불량률 예측
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse1" aria-expanded="true"
+														aria-controls="collapse1">
+														시계열 공정 센서 데이터 불량률 예측
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion1">
+											<div id="collapse1" class="collapse" aria-labelledby="heading1"
+												data-parent="#accordion1">
 												<div class="card-body">
 													<p>
-													삼성 SDS 데이터 분석 공모전은 두 가지 문제로 구성되어 있었습니다. 첫 번째는 시계열 공정 센서 데이터에 대한 불량률을 예측하는 문제였고, 두 번째는 삼성 SDS 구내 식당 수요를 예측하는 문제였습니다.
+														삼성 SDS 데이터 분석 공모전은 두 가지 문제로 구성되어 있었습니다. 첫 번째는 시계열 공정 센서 데이터에 대한
+														불량률을 예측하는 문제였고, 두 번째는 삼성 SDS 구내 식당 수요를 예측하는 문제였습니다.
 													</p>
 													<p>
-													1. 탐색적 자료 분석으로 공정 센서 데이터와 불량률 사이의 상관관계를 분석하였을 때, 센서를 세 가지 종류로 분류할 수 있다는 사실을 발견하였습니다. 각 종류에 해당하는 센서들이 높은 다중 공선성을 지닌다는 사실을 발견하였습니다.
+														1. 탐색적 자료 분석으로 공정 센서 데이터와 불량률 사이의 상관관계를 분석하였을 때, 센서를 세 가지 종류로
+														분류할 수 있다는 사실을 발견하였습니다. 각 종류에 해당하는 센서들이 높은 다중 공선성을 지닌다는 사실을
+														발견하였습니다.
 													</p>
 													<p>
-													2. 또한 센서의 불량률에서 이상치가 많이 발생하는 것을 알 수 있었습니다.
+														2. 또한 센서의 불량률에서 이상치가 많이 발생하는 것을 알 수 있었습니다.
 													</p>
 													<p>
-													3. KNN(K-Nearest-Neighbors)모델은 비모수 모델로 변수들간의 관계를 특정하지 않습니다. 따라서 유연하게 결정경계를 형성하여 다중공선성 문제를 효과적으로 회피할 수 있습니다. 또한 KNN은 이상치에 강건하게 결정경계를 형성할 수 있습니다.
+														3. KNN(K-Nearest-Neighbors)모델은 비모수 모델로 변수들간의 관계를 특정하지 않습니다. 따라서
+														유연하게 결정경계를 형성하여 다중공선성 문제를 효과적으로 회피할 수 있습니다. 또한 KNN은 이상치에 강건하게
+														결정경계를 형성할 수 있습니다.
 													</p>
 													<p>
-													4. 3번과 같은 이유로 KNN 모델이 불량률 예측에서 최적의 모델이라 판단했고, KNN모델을 사용하여 최종 예측 결과를 생성하였습니다.
+														4. 3번과 같은 이유로 KNN 모델이 불량률 예측에서 최적의 모델이라 판단했고, KNN모델을 사용하여 최종 예측
+														결과를 생성하였습니다.
 													</p>
-													<a href="images\leaderBoard.png" target="_blank">Leader Board Image</a>
+													<a href="images\leaderBoard.png" target="_blank">Leader Board
+														Image</a>
 												</div>
 											</div>
 										</div>
@@ -830,39 +942,52 @@
 										<div class="card">
 											<div class="card-header" id="heading2">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-													구내식당 수요량 예측
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse2" aria-expanded="true"
+														aria-controls="collapse2">
+														구내식당 수요량 예측
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+											<div id="collapse2" class="collapse" aria-labelledby="heading2"
+												data-parent="#accordion2">
 												<div class="card-body">
 													<p>
-													삼성 SDS 데이터 분석 공모전은 두 가지 문제로 구성되어 있었습니다. 첫 번째는 시계열 공정 센서 데이터에 대한 불량률을 예측하는 문제였고, 두 번째는 삼성 SDS 구내 식당 수요를 예측하는 문제였습니다.
+														삼성 SDS 데이터 분석 공모전은 두 가지 문제로 구성되어 있었습니다. 첫 번째는 시계열 공정 센서 데이터에 대한
+														불량률을 예측하는 문제였고, 두 번째는 삼성 SDS 구내 식당 수요를 예측하는 문제였습니다.
 													</p>
 													<p>
-													1. 동일한 메뉴인데도 불구하고, 메뉴이름이 통일이 되어 있지 않고, 정제되어 있지 않다는 사실을 발견하여 데이터의 메뉴이름을 정제하는 작업을 진행하였습니다.
+														1. 동일한 메뉴인데도 불구하고, 메뉴이름이 통일이 되어 있지 않고, 정제되어 있지 않다는 사실을 발견하여 데이터의
+														메뉴이름을 정제하는 작업을 진행하였습니다.
 													</p>
 													<p>
-													2. 특정 메뉴에서 같은 메뉴인데도 불구하고 다른 날과 수요량이 확연히 다르게 기록되는 것을 발견하였습니다. 이 경우가 본 메뉴에 부수적으로 동반되는 서브 메뉴라는 것을 파악하였고, 이 서브 메뉴들의 수요량을 본 메뉴에 통합하는 과정을 거쳐 데이터의 노이즈를 줄이고자 하였습니다.
+														2. 특정 메뉴에서 같은 메뉴인데도 불구하고 다른 날과 수요량이 확연히 다르게 기록되는 것을 발견하였습니다. 이
+														경우가 본 메뉴에 부수적으로 동반되는 서브 메뉴라는 것을 파악하였고, 이 서브 메뉴들의 수요량을 본 메뉴에 통합하는
+														과정을 거쳐 데이터의 노이즈를 줄이고자 하였습니다.
 													</p>
 													<p>
-													3. 같은 브랜드인데 메뉴의 갯수에 따라 수요량이 달라지는 것을 파악하였고, 메뉴의 갯수를 파생변수로 추가하였습니다.
+														3. 같은 브랜드인데 메뉴의 갯수에 따라 수요량이 달라지는 것을 파악하였고, 메뉴의 갯수를 파생변수로
+														추가하였습니다.
 													</p>
 													<p>
-													4. 추가 데이터로 날씨 데이터를 생각해보았으나, 날씨 데이터는 데이터에 노이즈를 추가할 수 있을 것 같아 사용하지 않았습니다.
+														4. 추가 데이터로 날씨 데이터를 생각해보았으나, 날씨 데이터는 데이터에 노이즈를 추가할 수 있을 것 같아 사용하지
+														않았습니다.
 													</p>
 													<p>
-													5. 연령대와 성별에 따라 메뉴의 수요량이 바뀐다고 생각(예를들어서 20대남자는 돼지국밥을 다른 성별, 연령대보다 선호함)하였습니다. 따라서 성별, 연령대에 따라 달라지는 메뉴의 수요량을 반영하기 위해 메뉴지수를 파생변수로 추가하였습니다.
+														5. 연령대와 성별에 따라 메뉴의 수요량이 바뀐다고 생각(예를들어서 20대남자는 돼지국밥을 다른 성별, 연령대보다
+														선호함)하였습니다. 따라서 성별, 연령대에 따라 달라지는 메뉴의 수요량을 반영하기 위해 메뉴지수를 파생변수로
+														추가하였습니다.
 													</p>
 													<p>
-													6. 공휴일 전,후에 따라 수요량이 달라지는 것을 파악하여 공휴일 변수를 파생변수로 추가하였습니다.
+														6. 공휴일 전,후에 따라 수요량이 달라지는 것을 파악하여 공휴일 변수를 파생변수로 추가하였습니다.
 													</p>
 													<p>
-													7. 예측 모델로 1번 문제와 동일하게 신경망 모델, XGBoost, KNN(K-Nearest-Neighbors) 모델을 앙상블(Ensemble)하여 최종 예측 결과를 생성하였습니다.
+														7. 예측 모델로 1번 문제와 동일하게 신경망 모델, XGBoost, KNN(K-Nearest-Neighbors)
+														모델을 앙상블(Ensemble)하여 최종 예측 결과를 생성하였습니다.
 													</p>
-													<a href="images\leaderBoard2.png" target="_blank">Leader Board Image</a>
+													<a href="images\leaderBoard2.png" target="_blank">Leader Board
+														Image</a>
 												</div>
 											</div>
 										</div>
@@ -871,19 +996,23 @@
 										<div class="card">
 											<div class="card-header" id="heading3">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse3" aria-expanded="true"
+														aria-controls="collapse3">
 														발표자료 및 상패(2nd Prize)
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion3">
+											<div id="collapse3" class="collapse" aria-labelledby="heading3"
+												data-parent="#accordion3">
 												<div class="card-body">
 													<p>
-													<a href="images\SamsungSDS_Presentation.pdf" target="_blank">Presentation</a>
+														<a href="images\SamsungSDS_Presentation.pdf"
+															target="_blank">Presentation</a>
 													</p>
 													<p>
-													<a href="images\SDS.jpg" target="_blank">Award</a>
+														<a href="images\SDS.jpg" target="_blank">Award</a>
 													</p>
 												</div>
 											</div>
@@ -908,18 +1037,23 @@
 										<div class="card">
 											<div class="card-header" id="heading4">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-													항공운항 데이터를 활용한 항공편별 지연 여부 예측 
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse4" aria-expanded="true"
+														aria-controls="collapse4">
+														항공운항 데이터를 활용한 항공편별 지연 여부 예측
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion4">
+											<div id="collapse4" class="collapse" aria-labelledby="heading4"
+												data-parent="#accordion4">
 												<div class="card-body">
 													<p>
-													본 공모전은 항공운항 데이터를 활용해서 항공편별 지연 여부를 예측하는 것이 문제였습니다. 저희 팀은 항공운항 변수, 기후 변수, 네트워크 분석을 통한 파생 변수를 활용해 항공편별 지연 여부를 예측하였습니다.
+														본 공모전은 항공운항 데이터를 활용해서 항공편별 지연 여부를 예측하는 것이 문제였습니다. 저희 팀은 항공운항 변수,
+														기후 변수, 네트워크 분석을 통한 파생 변수를 활용해 항공편별 지연 여부를 예측하였습니다.
 													</p>
-													<a href="images\prediction of flight delay.pdf" target="_blank">Presentation</a>
+													<a href="images\prediction of flight delay.pdf"
+														target="_blank">Presentation</a>
 												</div>
 											</div>
 										</div>
@@ -946,31 +1080,41 @@
 										<div class="card">
 											<div class="card-header" id="heading7">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-													Deep Learning Model for Forcasting a ENSO(El Nino Southern Oscillation)
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse7" aria-expanded="true"
+														aria-controls="collapse7">
+														Deep Learning Model for Forcasting a ENSO(El Nino Southern
+														Oscillation)
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion7">
+											<div id="collapse7" class="collapse" aria-labelledby="heading7"
+												data-parent="#accordion7">
 												<div class="card-body">
 													<p>
-													석사과정 중 한국해양과학기술원과 함께 해양, 기후 관련 연구를 진행하였습니다. 
+														석사과정 중 한국해양과학기술원과 함께 해양, 기후 관련 연구를 진행하였습니다.
 													</p>
 													<p>
-													ENSO는 El Nino Southern Oscillation의 약자로 동태평양과 서태평양의 이상 수온으로 인한 기후현상을 일컫는 말입니다. 본 프로젝트에서는 해수면 온도 지도 데이터를 입력으로 하고 특정 지역의 수온을 예측하여 엘니뇨(라니냐)를 판단할 수 있는 모델을 만드는 것을 목표로 하였습니다.
+														ENSO는 El Nino Southern Oscillation의 약자로 동태평양과 서태평양의 이상 수온으로 인한
+														기후현상을 일컫는 말입니다. 본 프로젝트에서는 해수면 온도 지도 데이터를 입력으로 하고 특정 지역의 수온을 예측하여
+														엘니뇨(라니냐)를 판단할 수 있는 모델을 만드는 것을 목표로 하였습니다.
 													</p>
 													<p>
-													1. 예측 모델의 결과에 대해 Grad CAM을 생성하였을 때, 지엽적인 부분을 가르키는 것을 발견하였습니다. 엘니뇨는 전 지구적인 현상이기 때문에 특정 지역을 가르키는 것은 이상하다고 판단하였습니다.
+														1. 예측 모델의 결과에 대해 Grad CAM을 생성하였을 때, 지엽적인 부분을 가르키는 것을 발견하였습니다.
+														엘니뇨는 전 지구적인 현상이기 때문에 특정 지역을 가르키는 것은 이상하다고 판단하였습니다.
 													</p>
 													<p>
-													2. RFB(Receptive Field Block)모듈은 다양한 크기의 Convolution layer와 Dilated Convolution layer를 결합하여 지역적인 부분과 전역적인 부분을 모두 학습할 수 있습니다.
+														2. RFB(Receptive Field Block)모듈은 다양한 크기의 Convolution layer와
+														Dilated Convolution layer를 결합하여 지역적인 부분과 전역적인 부분을 모두 학습할 수 있습니다.
 													</p>
 													<p>
-													3. 지역적인 부분과 전역적인 부분을 모두 학습할 수 있는 RFB모듈을 사용한다면 엘니뇨를 잘 예측할 수 있는 모델을 생성할 수 있을 것으로 판단했고, RFB를 토대로 실험 모델을 개발하였습니다.
+														3. 지역적인 부분과 전역적인 부분을 모두 학습할 수 있는 RFB모듈을 사용한다면 엘니뇨를 잘 예측할 수 있는
+														모델을 생성할 수 있을 것으로 판단했고, RFB를 토대로 실험 모델을 개발하였습니다.
 													</p>
 													<p>
-													4. 또한 엘니뇨는 해양, 대기 현상은 계절성을 많이 띄기 때문에 계절성을 학습하기 위해 Attention Mechanism을 모델 구조에 편입시켰습니다.
+														4. 또한 엘니뇨는 해양, 대기 현상은 계절성을 많이 띄기 때문에 계절성을 학습하기 위해 Attention
+														Mechanism을 모델 구조에 편입시켰습니다.
 													</p>
 													<a href="images\Patent.pdf" target="_blank">Patent</a>
 												</div>
@@ -981,17 +1125,22 @@
 										<div class="card">
 											<div class="card-header" id="heading8">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-													A Study on the Effect of Auto Augmentation using Feature Attribution
-													Methods
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse8" aria-expanded="true"
+														aria-controls="collapse8">
+														A Study on the Effect of Auto Augmentation using Feature
+														Attribution
+														Methods
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion8">
+											<div id="collapse8" class="collapse" aria-labelledby="heading8"
+												data-parent="#accordion8">
 												<div class="card-body">
 													<p>
-														Abstraction: 데이터 증강은 데이터의 변하지 않는 특징을 학습하는 것을 목표로 한다. 본 논문에서는 특성기여도 방법을 바탕으로 자동 증강이 어떤
+														Abstraction: 데이터 증강은 데이터의 변하지 않는 특징을 학습하는 것을 목표로 한다. 본 논문에서는
+														특성기여도 방법을 바탕으로 자동 증강이 어떤
 														특징을 학습하고 있는지 확인하고, 특성기여도 방법을 사용했을 때의 한계점을 제시한다.
 													</p>
 													<a href="images\Paper.pdf" target="_blank">Paper</a>
@@ -1003,28 +1152,37 @@
 										<div class="card">
 											<div class="card-header" id="heading9">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
-													Deep Learning Model for Forecasting Sea Surface Temperature in Korean Peninsula
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse9" aria-expanded="true"
+														aria-controls="collapse9">
+														Deep Learning Model for Forecasting Sea Surface Temperature in
+														Korean Peninsula
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion9">
+											<div id="collapse9" class="collapse" aria-labelledby="heading9"
+												data-parent="#accordion9">
 												<div class="card-body">
 													<p>
 														석사과정 중 한국해양과학기술원과 함께 해양, 기후 관련 연구를 진행하였습니다.
 													</p>
 													<p>
-													두 번째로 진행했던 프로젝트는 국내 연안 수온 예측 모델 개발 프로젝트입니다. 국내에서는 10곳 정도의 부표(buoy)로부터 기후데이터를 얻을 수 있습니다. 본 프로젝트에서는 이 데이터들을 입력데이터로 하여 국내 연안의 수온을 예측하는 딥러닝 모델을 만드는 것을 목표로 하였습니다. 
+														두 번째로 진행했던 프로젝트는 국내 연안 수온 예측 모델 개발 프로젝트입니다. 국내에서는 10곳 정도의
+														부표(buoy)로부터 기후데이터를 얻을 수 있습니다. 본 프로젝트에서는 이 데이터들을 입력데이터로 하여 국내 연안의
+														수온을 예측하는 딥러닝 모델을 만드는 것을 목표로 하였습니다.
 													</p>
 													<p>
-													1. 해양, 대기 예측 모델의 경우 긴 기간 예측에서도 좋은 성능을 유지하는 것이 중요하게 여겨지는데, 기존의 LSTM, GRU, Transformer모델의 경우 긴 기간 예측에서 성능이 급격하게 하락하는 특징이 있었습니다.
+														1. 해양, 대기 예측 모델의 경우 긴 기간 예측에서도 좋은 성능을 유지하는 것이 중요하게 여겨지는데, 기존의
+														LSTM, GRU, Transformer모델의 경우 긴 기간 예측에서 성능이 급격하게 하락하는 특징이 있었습니다.
 													</p>
 													<p>
-													2. 따라서 시간 특징을 잘 학습하여 긴 기간 예측에서도 성능을 유지하는 모델을 개발하는 것이 중요하다고 생각하였습니다.
+														2. 따라서 시간 특징을 잘 학습하여 긴 기간 예측에서도 성능을 유지하는 모델을 개발하는 것이 중요하다고
+														생각하였습니다.
 													</p>
 													<p>
-													3. 최근 개발된 모델들 중 시간 특징을 잘 학습할 수 있다고 여겨지는 N-BEATS, Temporal Fusion Transformer 등의 모델을 사용하여 해수면 온도 예측 모델을 개발하였습니다.
+														3. 최근 개발된 모델들 중 시간 특징을 잘 학습할 수 있다고 여겨지는 N-BEATS, Temporal Fusion
+														Transformer 등의 모델을 사용하여 해수면 온도 예측 모델을 개발하였습니다.
 													</p>
 												</div>
 											</div>
@@ -1034,14 +1192,17 @@
 										<div class="card">
 											<div class="card-header" id="heading10">
 												<h5 class="mb-0">
-													<button class="btn btn-link" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-													A Study on Encoding Module for Predicting Extreme
-													Value in Time Series Forecasting
+													<button class="btn btn-link" data-toggle="collapse"
+														data-target="#collapse10" aria-expanded="true"
+														aria-controls="collapse10">
+														A Study on Encoding Module for Predicting Extreme
+														Value in Time Series Forecasting
 													</button>
 												</h5>
 											</div>
 
-											<div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion10">
+											<div id="collapse10" class="collapse" aria-labelledby="heading10"
+												data-parent="#accordion10">
 												<div class="card-body">
 													<p>
 														Abstraction: 해수면 온도는 수치적 기후 예측모델과 해양 예측 모델의 가장 중요한 변수로
@@ -1064,9 +1225,11 @@
 												</div>
 											</div>
 										</div>
-								</div>
-								<div><b class="text-primary">기술 스택 : </b>Python, Pytorch</div>
-								<div><b class="text-primary">연구 분야 : </b>Visualization, Self Supervised Learning, Anomaly Detection, Uncertainty, Attention Mechanism, Time Series Forecasting, Spatio-Temporal Feature Extraction</div>
+									</div>
+									<div><b class="text-primary">기술 스택 : </b>Python, Pytorch</div>
+									<div><b class="text-primary">연구 분야 : </b>Visualization, Self Supervised Learning,
+										Anomaly Detection, Uncertainty, Attention Mechanism, Time Series Forecasting,
+										Spatio-Temporal Feature Extraction</div>
 								</div>
 							</div>
 						</div>
